@@ -1,13 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "comic neue", sans-serif;
 }
 
-.container {
+body {
+  position: relative;
   background-image: url(./images/lemurdude.jpg);
   background-position: center;
   background-size: cover;
-  width: 100%;
   height: 100vh;
 }
+
+form {
+  position: absolute;
+  background-color: white;;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 80px;
+  border-radius: 15px;
+  top: 30%;
+  right: 300px;
+}
+
+h1 {
+  margin-bottom: 12px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+input {
+  margin-bottom: 12px;
+  padding: 4px 8px;
+  width: 100%
+}
+
+input:nth-of-type(3) {
+  margin-bottom: 20px;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.circle1 {
+  top: 0px;
+  right: 0px;
+}
+.circle1:hover {
+  transform: translateX(-500px);
+}
+
+.circle2 {
+  top: 100px;
+  right: 40px;
+}
+.circle2:hover {
+  transform: translateX(-500px);
+}
+
+.circle3 {
+  top: 250px;
+  right: 123px;
+}
+.circle3:hover {
+  transform: translateX(-500px);
+}
+
+.circle4 {
+  top: 622px;
+  right:123px ;
+}
+.circle4:hover {
+  transform: translateX(-500px);
+}
+
